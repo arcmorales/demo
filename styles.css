@@ -1,0 +1,91 @@
+html,
+body {
+	height: 100%;
+	color: #fff;
+	text-align: center;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url(img/bg.jpg);
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+	color: #FFFFFF;
+	text-shadow: none; /* Prevent inheritance from `body` */
+	background-color: #EE652C;
+	border: 1px solid #EE652C;
+	text-transform: uppercase;
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+	display: table;
+	width: 100%;
+	height: 100%; /* For at least Firefox */
+	min-height: 100%;
+	-webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+					box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+	background: rgba(0,0,0,.5);
+}
+.site-wrapper-inner {
+	display: table-cell;
+	vertical-align: top;
+}
+
+.form-signin {
+	background: rgba(255,255,255,.1);
+	width: calc(100% - 20px);
+	max-width: 500px;
+	border-radius: 10px;
+	padding: 20px;
+	margin: 100px auto 0;
+}
+.form-signin .form-signin-heading {
+	margin-bottom: 20px;
+}
+.form-signin .checkbox {
+	font-weight: normal;
+}
+.form-signin .form-control {
+	position: relative;
+	height: auto;
+	-webkit-box-sizing: border-box;
+		 -moz-box-sizing: border-box;
+					box-sizing: border-box;
+	padding: 10px;
+	font-size: 16px;
+}
+.form-signin .form-control:focus {
+	z-index: 2;
+}
+.form-signin input[type="text"] {
+	margin-bottom: -1px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+	margin-bottom: 20px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+.navbar-brand {
+	padding: 5px;
+}
+.navbar-brand img {
+	height: 100%;
+	width: auto;
+}
+
+@media (min-width: 768px) {
+	/* Start the vertical centering */
+	.site-wrapper-inner {
+		vertical-align: middle;
+	}
+	.form-signin {
+		padding: 30px 50px 50px;
+		margin-top: 0;
+	}
+}
