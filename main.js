@@ -17,12 +17,12 @@ $( document ).ready( function () {
 		e.preventDefault();
 		var username = $( '.js_user' ).val();
 		var password = $( '.js_password' ).val();
-		var url_path = '/?error';
+		var url_path = '?error';
 
 		if ( SAMPLE_USER[ username ] && SAMPLE_USER[ username ] === password ) {
-			url_path = '/success';
+			url_path = 'success';
 		}
 
-		window.location = url_path;
+		window.location = window.location.href.split( '?' )[ 0 ] + url_path;
 	}
 } );
